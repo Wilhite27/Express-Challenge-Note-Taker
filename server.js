@@ -16,7 +16,7 @@ app.use(express.urlencoded({extended : true}));
 app.use(express.json());
 app.use(express.static('public'));
 
-// app.use("/api", api);
+app.use("/api", api);
 // app.use("/", html);
 
 // call for notes.html
@@ -25,13 +25,15 @@ app.get("/notes", function (req, res) {
 });
 
 // POSt function for adding new notes to db.json 
-app.post("/api/notes", function (req, res){
-  const notes = JSON.parse(fs.readFileSync("./db/db.json"));
-  newNotes.id = uuid.v4();
-  notes.push(newNotes);
-  fs.writeFileSync("./db/db.json", JSON.stringify(notes));
-  res.json(notes);
-});
+// app.post("/api/notes", function (req, res){
+//   console.log('Here I am');
+//   const notes = JSON.parse(fs.readFileSync("./db/db.json"));
+//   newNotes.id = uuid.v4();
+//   notes.push(newNotes);
+//   fs.writeFileSync("./db/db.json", JSON.stringify(notes));
+//   res.json(notes);
+// });
+
 // Start listen
 app.listen(PORT, () => {
     console.log(`API server now on port ${PORT}!`);

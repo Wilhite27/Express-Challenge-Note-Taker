@@ -2,6 +2,7 @@ const router = require("express").Router();
 const store = require("../db/store");
 // GET "/api/notes" responds with all notes from the database
 router.get("/notes", (req, res) => {
+  console.log('Here I am');
   store
     .getNotes()
     .then((notes) => res.json(notes))
