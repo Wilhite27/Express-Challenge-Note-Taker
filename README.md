@@ -17,3 +17,5 @@ WHEN I click on the Write icon in the navigation at the top of the page<br>
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column<br>
 
 ## Mock-up
+![11-express-homework-demo-01](https://user-images.githubusercontent.com/77178392/125178760-5a915d80-e1ad-11eb-9fde-603304cf9bf8.png)
+![11-express-homework-demo-02](https://user-images.githubusercontent.com/77178392/125178762-63822f00-e1ad-11eb-86a1-960ceb6ebd89.png)
